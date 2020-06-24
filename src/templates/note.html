@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메모장</title>
+</head>
+<body>
+<table  border="1" width="500">
+        <tr>
+            <th><b>과목명</b></th>
+            <th colspan="2"> <b>{{subject}}</b>
+        </th>
+        </tr>
+</table>
+<br>
+ <form method="POST" action="/save">
+     <input type="text" name="text" value="{{text}}" >
+     <button type="submit" name="save">저장</button>
+</form>
+</body>
+</html>

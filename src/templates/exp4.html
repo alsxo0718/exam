@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>HTML 문서</title>
+    <style>
+        td, th {
+            padding:10px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+        }
+    </style>
+</head>
+<body>  
+    <table border="1" >
+        <tr>
+            <th ><b>과목명</b></th>
+            <th><b>담당교원</b></th>
+            <th ><b><u>메모장</u></b></th>
+        </tr>
+        <tr>
+            <td >  머신러닝
+            </td>
+            <td >이종태 교수님</td>
+            <td><a href="{{ url_for('note',n=1)}}">이동</a></td>
+        </tr>
+        <tr>
+            <td> 정보시스템 통합 및 실습
+            </td>
+            <td>간자르 교수님</td>
+            <td><a href="{{ url_for('note',n=2) }}">이동 </a></td>
+        </tr>
+        <tr>
+            <td> 산업 AI
+            </td>
+            <td>우딘 교수님</td>
+            <td><a href="{{ url_for('note',n=3) }}">이동 </a></td>
+        </tr>
+        <tr>
+            <td colspan="3"><b>기능</b></td>
+        </tr>
+        <tr>
+            <td colspan="2">계산기</td>
+            <td><a href="{{ url_for('sessions') }}">이동 </a></td>
+        </tr>
+
+
+    </table>
+
+</body>
+</html>
